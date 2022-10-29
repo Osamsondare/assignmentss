@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samwise Hompage</title>
+    <title>Guessing game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <main class="home">
-        <div class="backg">
-            <img class="backgim" src="0x0 1.png" alt="photo of our restaurant">
-        </div>  
-    </main>  
-    <div class="hometext">
-        <h2>Welcome to <span>Samwise</span>  World</h2>
-        <p></p>
-       
-    </div>
-    
-    <div class="main-button">
-        <a href="register.html"><button>Register</button></a>
-        <a href="login.html"><button>Login</button></a>
-   </div>
+    <div class="usernameCon">
+        <label>Enter Your Username</label>
+        <input id="newUsername" />
+        <button id="continueBtn">Continue</buttom>
+      </div>
+      
+      <div class="userInfo">
+        <label id="username"></label>
+        <label id="totalPoints"></label>
+      </div>
+      
+      <div class="gameCon">
+        <label id="title">Guess a number between 1 and 2</label>
+        <label id="status"></label>
+        <input id="userGuess" />
+        <button id="guessBtn">Guess</button>
+      </div>
+      <script src="guessing.js"></script>
 </body>
 </html>
